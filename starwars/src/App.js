@@ -79,10 +79,8 @@ useEffect( ()=>{
   axios.get(linkToAPI)
   .then( (resp) =>{
     setCharacterArr(resp.data)
-    debugger
   })
   .catch((err) =>{
-    debugger
   })
 }
 , [])

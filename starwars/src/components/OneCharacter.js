@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const cardBackgroundColor = '#fdf86c'
 
 const Styles = styled.div`
     display: flex;
-    justify-content: space-space-between;
+    justify-content: center;
     color: white;
-    .chracter-container{
-        width: 80%;
+    flex-wrap: wrap;
+    width: 100%;
+    .character-container{
+        /* width: 40%; */
+        padding: 1rem;
+        margin: 2rem;
         /* background-color: ${cardBackgroundColor} */
+        border: .1rem solid white;
     }
 
 
@@ -23,7 +28,7 @@ export default function Onecharacter({ characterArr }) {
             {characterArr.map((aCharacter) => {
 
                 return (
-                    <div className='chracter-container' key={aCharacter.id}>
+                    <div className='character-container' key={aCharacter.id}>
                         <img src={aCharacter.image} alt={aCharacter.name}></img>
                         <div className='character-container-text Header'>
                             <h2>{aCharacter.name}</h2>
