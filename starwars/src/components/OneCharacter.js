@@ -23,7 +23,7 @@ export default function Onecharacter({ characterArr }) {
             {characterArr.map((aCharacter) => {
 
                 return (
-                    <div className='chracter-container'>
+                    <div className='chracter-container' key={aCharacter.id}>
                         <img src={aCharacter.image} alt={aCharacter.name}></img>
                         <div className='character-container-text Header'>
                             <h2>{aCharacter.name}</h2>

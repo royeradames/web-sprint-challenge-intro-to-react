@@ -73,10 +73,24 @@ const dummyData = [
   }
 const randomCharactersId = [getRndInteger(),getRndInteger(),getRndInteger(),getRndInteger(),getRndInteger(),getRndInteger()]
 
+const linkToAPI = `https://rickandmortyapi.com/api/character/${randomCharactersId}`
+
+useEffect( ()=>{
+  axios.get(linkToAPI)
+  .then( (resp) =>{
+    setCharacterArr(resp.data)
+    debugger
+  })
+  .catch((err) =>{
+    debugger
+  })
+}
+, [])
+
   return (
     <div className="App">
       <h1 className="Header">Random Rick and Morty Characters</h1>
-      {dummyData && <Character characterArr ={dummyData}/>}
+      {characterArr ? <Character characterArr ={characterArr}/> : <Character characterArr ={dummyData}/>}
       <Footer />
     </div>
   );
