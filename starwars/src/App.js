@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import styled from 'styled-components';
+import axios from 'axios';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
