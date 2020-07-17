@@ -33,10 +33,11 @@ Makes easier to redering a dynamic set of data on the page
 1. Describe component state.
 an object that when state changes, the component responds by re-rendering
 1. Describe props.
-
+object data pass down from parent to children  
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
-
+anything that affects something outside of the scope of the current function. 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
+You add them react components to the dependency array.
 
 ## Instructions
 
