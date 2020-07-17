@@ -10,10 +10,8 @@ const Styles = styled.div`
     flex-wrap: wrap;
     width: 100%;
     .character-container{
-        /* width: 40%; */
         padding: 1rem;
         margin: 2rem;
-        /* background-color: ${cardBackgroundColor} */
         border: .1rem solid white;
     }
 
