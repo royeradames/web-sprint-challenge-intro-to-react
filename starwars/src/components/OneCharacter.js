@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card, Placeholder } from 'semantic-ui-react'
 
 const Styles = styled.div`
     display: flex;
@@ -26,7 +25,6 @@ const Styles = styled.div`
 // Write your Character component here
 export default function Onecharacter({ characterArr }) {
 
-    debugger
     return (
         <Styles>
             {

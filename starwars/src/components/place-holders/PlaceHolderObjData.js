@@ -12,7 +12,7 @@ const Styles = styled.div`
     min-height: 300px;
     
     .placeholder-image{
-        min-width: 33rem;
+        min-width: 30rem;
         min-height: 30rem;
     }
     .character-container{
@@ -23,21 +23,7 @@ const Styles = styled.div`
 `
 
 export default function PlaceHolderCharacters({amount}) {
-    // function placeHolderCaracterGenerator(amount){
-    //     const charactersHolder = []
-    
-    //     for(let i = 0; 0 < amount; i++){
-    //         charactersHolder[i] = (
-    //         <div className='character-container' >
-    //             <Placeholder>
-    //                 <Placeholder.Image rectangular className='placeholder-image' />
-    //             </Placeholder>
-    //         </div>
-    //         )
-    //     }
-    
-    //     return charactersHolder
-    // }
+
     return (
         <Styles>
             <div className='character-container' >
