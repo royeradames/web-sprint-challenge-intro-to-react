@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react'
 import './App.css'
-import styled from 'styled-components'
 import axios from 'axios'
 import { Button,Placeholder } from 'semantic-ui-react'
 //import components
@@ -8,8 +7,8 @@ import Character from './components/Character'
 import Footer from './components/Footer'
 import PlaceHolderCharacters from './components/place-holders/PlaceHolderObjData'
 
+
 const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 const [characterArr, setCharacterArr] = useState()
 
@@ -46,7 +45,7 @@ useEffect( ()=>{
     <div className="App">
       <h1 className="Header">Random Rick and Morty Characters</h1>
       {characterArr ? <Character characterArr ={characterArr}/> :  <PlaceHolderCharacters />}
-      <Button inverted onClick={handleClick}>Load New Character</Button>
+      <Button inverted onClick={handleClick} >Load New Character</Button>
       <Footer />
     </div>
   );
